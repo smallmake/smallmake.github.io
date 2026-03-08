@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:link { color: #333; }
+a:visited { color: #333; }
+a:hover { color: #000; }
+a:active { color: #333; }
+
+* {
+  box-sizing: border-box;
+}
+
+.nav .active {
+  text-decoration: underline !important;
+}
+
+.category svg {
+  fill:#602408;  
+  stroke:#602408;
+}
+
+.topic svg {
+  fill:#176db9;  
+  stroke:#176db9;
+}
+
+.page svg {
+  fill:#349205;  
+  stroke:#349205;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+*/
+
+/* footerをウィンドウの高さの外側に出す */
+.content {
+  min-height: calc(100vh - 120px);
+}
+
+
+/* ページの先頭へスクロールするボタンのスタイル */
+/* 参考： https://cotodama.co/pagetop/#15　*/
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #848484;
+  opacity: 0.6;
+}
+#page_top a {
+  position: relative;
+  display: block;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before {
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  /*width: 25px;
+  height: 25px;*/
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  /*text-align: center;
+  vertical-align: middle;*/
+}
+
+/* reCaptcha をデフォルトでは非表示にする */
+.grecaptcha-badge {
+  visibility: hidden;
+  margin-bottom: 40px;
+}
+
+/* 利用規約ページ用のulの設定 */
+.ULX ul {
+  margin-left: 0;
+}
+
+.ULX ul li {
+  margin-left: 0;
+  list-style-type: none;
+  padding-left: 1.7em;
+  text-indent: -1.7em;
+}
+
+.ULX ul ul li {
+	list-style-type: '- ';
+}
