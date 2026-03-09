@@ -179,7 +179,7 @@
 
       const formData = new FormData(form);
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', '/cgi-bin/fmail.cgi', true);
+      xhr.open('POST', 'https://fip.edgeknocker.com/cgi-bin/fmail.cgi', true);
       xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
       xhr.onload = function () {
